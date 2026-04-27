@@ -19,7 +19,8 @@ const ALLOWED_ORIGINS = [
   'https://video-meet-client.onrender.com',
   'https://video-meet-aj54.onrender.com',
   'https://lgt-2.onrender.com',
-  'https://video-call-pro.onrender.com'
+  'https://video-call-pro.onrender.com',
+  'https://video-call-pro-1.onrender.com'
 ];
 
 const corsOptions = {
