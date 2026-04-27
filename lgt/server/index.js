@@ -18,7 +18,8 @@ const ALLOWED_ORIGINS = [
   'http://localhost:3001',
   'https://video-meet-client.onrender.com',
   'https://video-meet-aj54.onrender.com',
-  'https://lgt-2.onrender.com'
+  'https://lgt-2.onrender.com',
+  'https://video-call-pro.onrender.com'
 ];
 
 const corsOptions = {
@@ -140,6 +141,10 @@ const activeSpeakers = new Map();
 const SPEAKER_LOCK_TIMEOUT_MS = 12000; // auto-release if server hangs
 
 // Health check endpoint (keeps Render service alive)
+app.get('/', (req, res) => {
+  res.send('Backend is running ✅');
+});
+
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
@@ -1076,7 +1081,7 @@ io.on("connection", socket => {
   });
 });
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 10000;
 
 server.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);

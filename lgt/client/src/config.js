@@ -1,12 +1,12 @@
 // Configuration for different environments
 const config = {
   development: {
-    API_BASE: 'http://localhost:5001/api',
-    SOCKET_URL: 'http://localhost:5001'
+    API_BASE: 'http://localhost:10000/api',
+    SOCKET_URL: 'http://localhost:10000'
   },
   production: {
-    API_BASE: 'https://lgt-2.onrender.com/api',
-    SOCKET_URL: 'https://lgt-2.onrender.com'
+    API_BASE: 'https://video-call-pro.onrender.com/api',
+    SOCKET_URL: 'https://video-call-pro.onrender.com'
   }
 };
 
